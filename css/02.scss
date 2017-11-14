@@ -27,7 +27,7 @@ body{
       right: 20px;
     }
   }
-  .nav{width: 100%;background: #0a7fc4;height: 10/$sc+rem}
+  .nav{width: 100%;background: #0a7fc4;height: 100/$sc+rem}
   .nav div{
     display: inline-block;
     padding: 5/$sc+rem 30/$sc+rem;
@@ -48,27 +48,10 @@ body{
       right: 20px;
     }
   }
-  .content{width: 100%;position: absolute;bottom: 0}
+  .content{width: 100%;}
   .content img{
     border: none;
-    /*&:nth-child(1){
-      width: 374/$sc+rem;margin: 0;padding: 0;
-    }
-    &:nth-child(2){
-      width: 375/$sc+rem;margin: 0;padding: 0;
-    }
-    &:nth-child(3){
-      width: 375/$sc+rem;margin: 0;padding: 0;
-    }
-    &:nth-child(4){
-      width: 375/$sc+rem;margin: 0;padding: 0;
-    }
-    &:nth-child(5){
-      width: 375/$sc+rem;margin: 0;padding: 0;
-    }
-    &:nth-child(6){
-      width: 375/$sc+rem;margin: 0;padding: 0;
-    }*/
+
     width: 375/$sc+rem;margin: 0;padding: 0;
   }
 }
