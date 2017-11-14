@@ -41,7 +41,8 @@ body{
       left: 20px;
     }
     &:nth-child(2){
-      margin-left: 315/$sc+rem;
+      position: relative;
+      left: 42%;
     }
     &:nth-child(3){
       position: absolute;
