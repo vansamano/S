@@ -27,6 +27,24 @@
 </body>
 <script>
     var box=document.getElementById('box');
+    var boxs=box.getElementsByTagName('div');
+    var w=innerWidth;
+    box.addEventListener('touchstart',function (ev) {
+        var posleft=this.offsetLeft;
+        var ex=ev.changedTouches[0].pageX;
+        box.addEventListener("touchmove",function (ev) {
+            var divs=ev.changedTouches[0].pageX-ex;
+            box.style.left=(posleft+divs)+'px';
+        });
+        box.addEventListener('touchend',function (ev) {
+            var n=Math.round(box.offsetLeft/w);
+            if(n<=-(boxs.length-1)){
+                n=-(boxs.length-1)
+            }if(n>0){n=0;}
+            box.style.left=n*w+"px";
+        })
+
+    })
     /*box.addEventListener("touchstart",function (ev) {
         ev.preventDefault();
         this.innerHTML=ev.targetTouches.length;
