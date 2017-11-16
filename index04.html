@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/04.css">
+    <!--<script>
+        document.documentElement.style.fontSize=innerWidth/15+"px"
+    </script>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{position: absolute;top:0;background: black;opacity: 0.5;width: 800px;height: 800px;text-align: center;color: white}
+    </style>
+</head>
+<body>
+<a href="http://www.baidu.com">sad</a>
+<div id="box">asd</div>
+</body>
+<script>
+    var box=document.getElementById('box');
+    box.addEventListener("touchstart",function (ev) {
+        ev.preventDefault();
+        this.innerHTML=ev.targetTouches.length;
+    })
+    /*box.addEventListener("touchstart",function (ev) {
+        ev.preventDefault();
+        this.innerHTML=ev.changedTouches.length;
+    })*/
+</script>
+</html>
